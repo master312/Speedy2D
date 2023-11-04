@@ -502,7 +502,7 @@ pub struct WindowHelper<UserEventType = ()>
 where
     UserEventType: 'static
 {
-    inner: WindowHelperInnerType<UserEventType>
+    pub inner: WindowHelperInnerType<UserEventType>
 }
 
 impl<UserEventType> WindowHelper<UserEventType>
