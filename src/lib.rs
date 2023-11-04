@@ -441,7 +441,7 @@ impl Display for GLRendererCreationError
 pub struct GLRenderer
 {
     context: GLContextManager,
-    renderer: Graphics2D
+    pub renderer: Graphics2D
 }
 
 impl GLRenderer
@@ -1222,7 +1222,7 @@ where
     UserEventType: 'static
 {
     window_impl: WindowGlutin<UserEventType>,
-    renderer: GLRenderer
+    pub renderer: GLRenderer
 }
 
 #[cfg(any(doc, doctest, all(feature = "windowing", not(target_arch = "wasm32"))))]
