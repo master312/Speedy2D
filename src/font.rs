@@ -808,6 +808,7 @@ pub enum TextAlignment
 }
 
 /// A series of options for specifying how text should be laid out.
+#[derive(Clone)]
 pub struct TextOptions
 {
     tracking: f32,
